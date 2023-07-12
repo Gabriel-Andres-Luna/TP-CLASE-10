@@ -1,0 +1,288 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #812f2f;
+  padding: 5px;
+  text-align: center;
+}
+.header img {
+  width: 150px;
+  margin-top: 0.5%;
+}
+  
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+  
+.topnav a {
+  color: #fff;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.topnav a:hover {
+  background-color: #555;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.hamburger-menu .line {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu li a:hover {
+  background-color: #555;
+}
+  
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.leftcolumn {
+  margin-top: 100px;
+  flex: 70%;
+  padding: 20px;
+}
+
+.rightcolumn {
+  flex: 30%;
+  padding: 20px;
+}
+  
+.card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card h5 {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 2%;
+}
+
+.custom-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.ad-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+  
+@media (max-width: 3000px) {
+  .menu {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+  .menu-checkbox {
+    display: none;
+  }
+  .menu-checkbox:checked ~ .menu {
+    display: block;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .column {
+    margin-right: 0;
+    margin-bottom: 10px;
+    flex-basis: 100%;
+  }
+
+  .column label {
+    margin-bottom: 8px;
+  }
+
+  .column input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+}
+.footer {
+  background-color: #812f2f;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+  
+.footer-content2 {
+  height: 20px;
+}
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+  
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+  
+.column {
+  flex-basis: calc(33.33% - 20px);
+  margin-right: 20px;
+}
+  
+.column:last-child {
+  margin-right: 0;
+}
+  
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+  
+input {
+  width: 100%;
+  padding: 5px;
+}
+  
+button[type="submit"] {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #812f2f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+  
+button[type="submit"]:hover {
+  background-color: #6a2626;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <img src="Resources/FastNewsIcon.png" alt="">
+  </div>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modal-message"></p>
+    </div>
+  </div>
+  <nav class="topnav">
+    <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+    <label for="menu-checkbox" class="hamburger-menu">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+    <ul class="menu">
+      <li><a href="Index.html">Inicio</a></li>
+      <li><a href="#">Deporte</a></li>
+      <li><a href="#">Política</a></li>
+      <li><a href="#">Entretenimiento</a></li>
+      <li><a href="#">Registrarse</a></li>
+    </ul>
+  </nav>
+  
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Formulario</h2>
+      <form id="formulario" onsubmit="return validarFormulario()">
+        <div class="row">
+          <div class="column">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <div id="error-nombre" class="error-message"></div>
+          </div>
+          <div class="column">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div id="error-email" class="error-message"></div>
+          </div>
+          <div class="column">
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+            <div id="error-edad" class="error-message"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+            <div id="error-telefono" class="error-message"></div>
+          </div>
+          <div class="column">
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            <div id="error-direccion" class="error-message"></div>
+          </div>
+          <div class="column">
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+            <div id="error-ciudad" class="error-message"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label for="codigo-postal">Código Postal:</label>
+            <input type="text" id="codigo-postal" name="codigo-postal" required>
+            <div id="error-codigo-postal" class="error-message"></div>
+          </div>
+          <div class="column">
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required>
+            <div id="error-dni" class="error-message"></div>
+          </div>
+          <div class="column">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+            <div id="error-contrasena" class="error-message"></div>
+          </div>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-content">
+      <h2>Contacto</h2>
+      <p>Correo electrónico: info@fastnews.com</p>
+      <p>Teléfono: +123456789</p>
+      <div class="footer-content2"></div>
+      <p>Todos los derechos reservados © 2023</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
